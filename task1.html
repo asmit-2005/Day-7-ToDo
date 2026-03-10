@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="count">0</p>
+    <button id="btn">Click</button>
+</body>
+<script>
+    const btn = document.getElementById("btn");
+    const para = document.getElementById("count")
+    let val = 0;
+    btn.addEventListener("click",function() {
+    btn.style.color = "orange";
+    para.innerText = val++;
+
+       
+    });
+</script>
+</html>
